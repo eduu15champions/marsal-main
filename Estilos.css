@@ -1,0 +1,471 @@
+/* --------------------------cosas generales------------------------- */
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: #FFFDE2;
+}
+
+a:link, a:visited {
+    color: rgb(15, 15, 15);
+    text-decoration: none; /* Elimina el subrayado */
+}
+
+/* --------------------------cosas compartidas (cabecera) ------------------------- */
+
+  
+.logo{
+    width: 50%;
+    min-width: 150px;
+    display: block;
+    align-self: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.iconitos{
+    display: block;
+    width: 40px;
+    height: 40px;
+    margin: 5px;
+    margin-top: 25px;
+    margin-bottom: 15px;
+}
+
+header{
+    width: 100%;
+    height: auto;
+    position:fixed;
+    top: 0;
+    background-color: #D8C9B6;
+    z-index: 100;
+    padding: 5px;
+}
+
+#cabecera_central{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+#cabecera_inferior{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+#cabecera_inferior > div > a > img{
+    display: inline;
+    height: 18px;
+    width: 18px;
+}
+
+#cabecera_inferior > div > a > p{
+    display: inline;
+}
+
+#niño1{
+    text-align: start;
+}
+
+#niño2{
+    text-align: end;
+}
+
+#cabecera_inferior > div{
+    align-content: center;
+    margin-bottom: 5px;
+}
+
+
+#conIconos{
+    display: flex;
+    justify-content: flex-end;
+    text-align: center;
+}
+
+#navinicial{
+    text-align:right;
+    display: flex; 
+    justify-content: flex-end;
+}
+
+#navinicial > *{
+    font-size: larger;
+}
+
+h1{
+    text-align: center;
+}
+
+h2{
+    text-align: center;
+}
+
+
+/* --------------------------pagina principal------------------------- */
+
+#totality{
+  width: 100%;
+  height: 100vh;
+  display: flex;
+}
+
+#divisionuno{
+    height: 100%;
+    width: 50%;
+    background: url(diseño3.png) ;
+    background-repeat:round;
+}
+
+#divisiondos{
+    height: 100%;
+    width: 50%;
+    background: url(zendaya.jpg) ;
+    background-repeat:round;
+}
+
+.negro{
+    background-color: rgba(0, 0, 0, 0.550);
+    height: 100%;
+    width: 100%;
+    transition: 0.5s;
+}
+
+#divisionuno:hover{
+    width: 52%;
+    transition: 0.5s;
+}
+
+#divisiondos:hover{
+    width: 52%;
+    transition: 0.5s;
+}
+
+.negro:hover{
+    background-color: rgba(0, 0, 0, 0);
+}
+
+.centado{
+    position: relative;
+    top: 60%;
+    width: 50%;
+    margin-left: 25%;
+    margin-right: 25%;
+    text-align: center;
+    font-size:x-large;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: #D8C9B6;
+    border-radius: 20px;
+}
+
+/* --------------------------pagina productos------------------------- */
+
+.pagina-productos .logo {
+    height: 70px;
+    width: 200px;
+   margin-top: 60px;
+}
+
+  .pagina-productos header {
+    position: relative;
+    height: 60px;
+  }
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    background-color: #f6f9f7;
+    margin: 20px;
+}
+
+.caja {
+  
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    text-align: center;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: 0.5s;
+}
+
+.caja:hover{
+    background-color: rgba(254, 253, 244, 0.8);
+    transition: 0.5s;
+}
+
+.caja > img{
+    width: 80%;
+}
+
+.caja > button {
+    height: 20px;
+    width: 100px;
+}
+
+#panfletos{
+    margin-top: 10rem;
+}
+
+#mainproductos{
+    margin-top: 10rem;
+}
+
+.informativo {
+    background-color: #D8C9B6;
+    margin: 5px;
+}
+
+.informativo > h3 {
+    background-color: #dbbd94;
+}
+
+.informativo > p {
+    font-size: large;
+    padding: 5px;
+}
+
+.colorcitos{
+    height: 60px;
+    width: 60px;
+    padding: 5px;
+}
+
+#cara{
+    display: flex;
+    width: 100%;
+    max-width: 600px;
+    margin: auto;
+    align-items: center;
+}
+
+@media (max-width: 800px) {
+    #totality{
+    display:block;
+    }
+    #divisionuno{
+        height: 100%;
+        width: 100%;
+    }
+    
+    #divisiondos{
+        height: 100%;
+        width: 100%;
+        background: url(zendaya2.jpg) ;
+        background-repeat:round;
+    }
+
+    .negro{
+        background-color: rgba(0, 0, 0, 0);
+        height: 100%;
+        width: 100%;
+    }
+
+    .centado{
+        top: 50%;
+    }
+    
+    #divisionuno:hover{
+        height: 100%;
+        width: 100%;
+        background: url(diseño3.png) ;
+        background-repeat:round;
+    }
+
+    #divisiondos:hover{
+        height: 100%;
+        width: 100%;
+        background: url(zendaya2.jpg) ;
+        background-repeat:round;
+    }
+
+    .iconitos{
+        display: block;
+        width: 30px;
+        height: 30px;
+    }
+}
+
+@media (max-width: 600px) {
+    .iconitos{
+        display: block;
+        width: 20px;
+        height: 20px;
+        margin-top: 20px;
+    }
+
+    .grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .caja > button {
+        height: 30px;
+        width: 150px;
+    }
+}
+
+
+
+
+/* Estilo básico del menú */
+#menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    background-color: #D8C9B6;
+    display: flex;
+    justify-content: center;
+  }
+  
+  #menu ul li {
+    position: relative;
+    padding: 10px 15px;
+  }
+  
+  #menu ul li a {
+    color: rgb(15, 15, 15);
+    text-decoration: none;
+  }
+  
+  /* Submenú desplegable */
+  #menu ul ul {
+    display: none;
+    position: absolute;
+    background-color: #D8C9B6;
+    min-width: 160px;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  #menu ul li:hover > ul {
+    display: block;
+  }
+  
+  #menu ul ul li {
+    padding: 8px 16px;
+    width: 100%;
+  }
+  
+  #suscripcion {
+    background-color: #f5f5f5;
+    padding: 20px;
+    text-align: center;
+    margin: 20px auto;
+    border-radius: 8px;
+    max-width: 500px;
+  }
+  
+  #suscripcion h3 {
+    margin-bottom: 15px;
+  }
+  
+  #suscripcion input[type="email"] {
+    padding: 10px;
+    width: 60%;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-right: 10px;
+  }
+  
+  #suscripcion button {
+    padding: 10px 20px;
+    background-color: #D8C9B6;
+    color: #000;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  #suscripcion button:hover {
+    background-color: #c7b9a0;
+  }
+
+  
+  /* --- Estilos del carrito --- */
+.carrito {
+    position: fixed;
+    top: 100px;
+    right: 20px;
+    width: 320px;
+    max-height: 80vh;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    z-index: 200;
+    overflow-y: auto;
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    border: 1px solid #D8C9B6;
+}
+
+.carrito h2 {
+    text-align: center;
+    margin: 15px 0;
+    color: #5A4A3A;
+    font-size: 1.3em;
+}
+
+.carrito ul {
+    list-style: none;
+    padding: 0 15px;
+    margin: 0;
+}
+
+.carrito li {
+    padding: 10px 0;
+    border-bottom: 1px solid #eee;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.carrito li:last-child {
+    border-bottom: none;
+}
+
+.carrito .total {
+    font-weight: bold;
+    text-align: right;
+    margin: 15px;
+    padding-top: 10px;
+    border-top: 1px solid #D8C9B6;
+    color: #5A4A3A;
+}
+
+.btn-vaciar {
+    width: 90%;
+    margin: 0 auto 15px;
+    padding: 10px;
+    background-color: #D8C9B6;
+    color: #5A4A3A;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.2s;
+    display: block;
+}
+
+.btn-vaciar:hover {
+    background-color: #c4b3a0;
+}
+
+.eliminar {
+    background-color: #f5f5f5;
+    color: #9e7e69;
+    border: none;
+    border-radius: 4px;
+    padding: 3px 8px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.eliminar:hover {
+    background-color: #e6d7c7;
+}

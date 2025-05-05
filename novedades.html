@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+    <link rel="stylesheet" href="Estilos.css">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="Manel Garcés Alcázar"/>
+        <title>marsalProductos</title>
+    </head>
+    <body>
+        <header>
+            <div id="cabecera_superior">
+              <nav id="navinicial">
+                  <p>ESPAÑA</p>
+                  <pre>   |   </pre>
+                  <p>NUESTRA TIENDA</p>
+              </nav>
+            </div>
+            <div id="cabecera_central">
+              <div></div>
+              <div><a href="index.html"><img src="imagenes/logo_marsal.png" class="logo" /></a></div>
+              <div id="conIconos">
+                <img src="imagenes/corazon.png" class="iconitos" />
+                <img src="imagenes/carrito.png" class="iconitos" />
+              </div>
+            </div>
+            <div id="cabecera_inferior">
+              <div id="niño1"><a href="productos.html"><img src="imagenes/menu.png"> <p>COLECCIONES</p></a></div>
+              <div id="niño2"><a href="acerca_de.html"><p>ACERCA DE MARSAL</p></a></div>
+            </div>
+          </header>
+        <main style="margin-top: 10rem;">
+          <div id="Cocodrilo">
+            <h2>Novedades</h2>
+              <div class="grid">
+                <div class="caja">
+                  <img src="Bolsos/nuevo_cocodrilo.jpeg">
+                  <p>novedad en piel de cocodrilo</p>
+                  <p>400,49 €</p>
+                  <button onclick="AlCarrito('Bolso de cocodrilo nuevo', 400,49)">Añadir al carrito</button>
+                </div>
+                <div class="caja">
+                  <img src="Bolsos/nuevo_leopardo.jpeg">
+                  <p>novedad en piel de leopardo</p>
+                  <p>405,49 €</p>
+                  <button> Comprar </button>
+                </div>
+                <div class="caja">
+                  <img src="Bolsos/nuevo_serpiente.jpeg">
+                  <p>novedad en piel de serpiente</p>
+                  <p>403,99 €</p>
+                  <button> Comprar </button>
+                </div>
+                <div class="caja">
+                  <img src="Bolsos/nuevo_zebra.jpeg">
+                  <p>novedad en piel de zebra</p>
+                  <p>400,99 €</p>
+                  <button> Comprar </button>
+                </div>
+              </div>
+          </div>
+        </main>
+
+        <div class="carrito">
+          <h2>Carrito</h2>
+          <ul id="lista-carrito"></ul>
+          <p>Total: <span id="total">0.00</span> €</p>
+          <button id="vaciar-carrito" class="btn-vaciar">Vaciar carrito</button>
+        </div>
+        
+        
+        
+        <script src="carrito.js"></script>
+
+    </body>
+</html>
+
