@@ -469,3 +469,42 @@ h2{
 .eliminar:hover {
     background-color: #e6d7c7;
 }
+
+.footer-global {
+    background-color: #D8C9B6;
+    padding: 20px;
+    text-align: center;
+    margin-top: 40px;
+    border-top: 1px solid #c7b9a0;
+  }
+  .footer-global img {
+    margin-bottom: 15px;
+  }
+  .footer-global nav ul {
+    list-style: none;
+    margin: 15px 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+  }
+  .footer-global nav ul li a {
+    color: #5A4A3A;
+    text-decoration: none;
+  }
+  .footer-global nav ul li a:hover {
+    text-decoration: underline;
+  }
+  .footer-contacto {
+    margin-top: 15px;
+    font-size: 0.9em;
+  }
+  .redes-sociales {
+    margin-top: 10px;
+  }
+  .redes-sociales a {
+    margin: 0 10px;
+    color: #5A4A3A;
+  }
+  
