@@ -1,10 +1,10 @@
- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
   <link rel="stylesheet" href="Estilos.css" />
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="author" content="Manel Garcés Alcázar y Eduardo Valentin Gogot Trascau  " />
+    <meta name="author" content="Manel Garcés Alcázar y Eduardo Valentin Gogot Trascau" />
     <title>Marsal</title>
   </head>
   <body>
@@ -30,6 +30,73 @@
       </div>
     </header>
     <main>
+      <!-- Espacio para compensar el header fijo -->
+      <div style="margin-top: 150px;"></div>
+      
+      <div class="slider">
+        <div class="slide active">
+          <a href="productos.html"></a>
+            <img src="Bolsos/Cocodrilo_verde_pequeño.jpeg" alt="Bolso de piel de cocodrilo">
+            <div class="descripcion-bolso">
+              <p>Elegante bolso de piel de cocodrilo auténtica con acabado brillante. Dispone de asas reforzadas y compartimentos interiores organizados para mayor comodidad.</p>
+              <p class="caracteristicas">
+                <span>Material: Piel exótica</span>
+                <span>Dimensiones: 30x20x12cm</span>
+                <span>Colores: Negro, Marrón</span>
+              </p>
+            </div>
+          </a>
+        </div>
+        <div class="slide">
+          <a href="productos.html">
+            <img src="Bolsos/serpiente_amarillo.jpeg" alt="Bolso de piel de serpiente">
+            <div class="descripcion-bolso">
+              <p>Sofisticado bolso de piel de serpiente con patrón natural único. Ideal para ocasiones especiales con cierre magnético y detalles metálicos dorados.</p>
+              <p class="caracteristicas">
+                <span>Material: Piel de pitón</span>
+                <span>Dimensiones: 25x15x8cm</span>
+                <span>Colores: Natural, Tintado</span>
+              </p>
+            </div>
+          </a>
+        </div>
+        <div class="slide">
+          <a href="productos.html">
+            <img src="Bolsos/leopardo_correa.jpeg" alt="Bolso de piel de leopardo">
+            <div class="descripcion-bolso">
+              <p>Exclusivo bolso con estampado de leopardo. Perfecto para un look atrevido con cierre magnético y cadena dorada desmontable para versatilidad.</p>
+              <p class="caracteristicas">
+                <span>Material: Piel tratada</span>
+                <span>Dimensiones: 28x18x10cm</span>
+                <span>Colores: Estampado natural</span>
+              </p>
+            </div>
+          </a>
+        </div>
+        <div class="slide">
+          <a href="productos.html">
+            <img src="Bolsos/zebra_correa.jpeg" alt="Bolso de piel de zebra">
+            <div class="descripcion-bolso">
+              <p>Llamativo bolso con estampado de cebra. Diseño vanguardista con detalles metálicos y asa ajustable para llevar en mano o al hombro según la ocasión.</p>
+              <p class="caracteristicas">
+                <span>Material: Piel sintética premium</span>
+                <span>Dimensiones: 32x22x15cm</span>
+                <span>Colores: Blanco/Negro</span>
+              </p>
+            </div>
+          </a>
+        </div>
+        <button class="slider-btn prev">&lt;</button>
+        <button class="slider-btn next">&gt;</button>
+        
+        <div class="slider-indicators">
+          <div class="slider-indicator active"></div>
+          <div class="slider-indicator"></div>
+          <div class="slider-indicator"></div>
+          <div class="slider-indicator"></div>
+        </div>
+      </div>
+
       <div id="totality">
         <div id="divisionuno" style="background-color: rgb(0, 59, 5)">
             <a href="novedades.html">
@@ -52,8 +119,6 @@
       </div>
     </main>
     
-    
-    
     <section id="suscripcion">
       <h3>Suscríbete a nuestra newsletter</h3>
       <form action="#" method="post" id="formulario-suscripcion">
@@ -62,34 +127,35 @@
       </form>
     </section>
     
-
-
-
-
+    <script src="sliders.js"></script>
   </body>
 
-  <footer class="footer-global">
-    <div class="footer-info">
-      <img src="imagenes/logo_marsal.png" alt="Logo" width="120">
-      <p>© 2025 MARSAL. Todos los derechos reservados.</p>
-    </div>
-    <nav>
-      <ul>
-        <li><a href="index.html">Inicio</a></li>
-        <li><a href="productos.html">Productos</a></li>
-        <li><a href="novedades.html">Novedades</a></li>
-        <li><a href="sobreNosotros.html">Sobre nosotros</a></li>
-        <li><a href="#privacidad">Política de privacidad</a></li>
-      </ul>
-    </nav>
-    <div class="footer-contacto">
-      <p>Contacto: <a href="mailto:marsal@gmail.com">marsal@gmail.com</a> | 611096592</p>
-      <div class="redes-sociales">
-        <a href="https://facebook.com/marsal" target="_blank">Facebook</a>
-        <a href="https://instagram.com/marsal" target="_blank">Instagram</a>
+  <footer>
+    <div class="footer-container">
+      <div class="footer-section">
+        <h3>Contacto</h3>
+        <p>marsal@gmail.com</p>
+        <p>611 096 592</p>
+      </div>
+      <div class="footer-section">
+        <h3>Enlaces</h3>
+        <ul>
+          <li><a href="acerca_de.html">Sobre MARSAL</a></li>
+          <li><a href="productos.html">Productos</a></li>
+          <li><a href="novedades.html">Novedades</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h3>Redes sociales</h3>
+        <div class="footer-social">
+          <a href="#" aria-label="Instagram">Instagram</a>
+          <a href="#" aria-label="Facebook">Facebook</a>
+        </div>
       </div>
     </div>
+    <div class="footer-copyright">
+      &copy; 2025 MARSAL. Todos los derechos reservados.
+    </div>
   </footer>
-
+  
 </html>
-
