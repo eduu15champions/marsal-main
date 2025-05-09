@@ -33,69 +33,66 @@
       <!-- Espacio para compensar el header fijo -->
       <div style="margin-top: 150px;"></div>
       
-      <div class="slider">
-        <div class="slide active">
-          <a href="productos.html"></a>
-            <img src="Bolsos/Cocodrilo_verde_pequeño.jpeg" alt="Bolso de piel de cocodrilo">
-            <div class="descripcion-bolso">
-              <p>Elegante bolso de piel de cocodrilo auténtica con acabado brillante. Dispone de asas reforzadas y compartimentos interiores organizados para mayor comodidad.</p>
-              <p class="caracteristicas">
-                <span>Material: Piel exótica</span>
-                <span>Dimensiones: 30x20x12cm</span>
-                <span>Colores: Negro, Marrón</span>
-              </p>
-            </div>
-          </a>
+      <!-- Estructura mejorada del carrusel para reemplazar en index.html -->
+<link rel="stylesheet" href="carrusel-mejorado.css">
+
+<div class="slider">
+  <div class="slides-container">
+    <div class="slide active">
+      <a href="productos.html">
+        <div class="slide-content">
+          <img src="Bolsos/Cocodrilo_verde_pequeño.jpeg" alt="Bolso de piel de cocodrilo">
+          <div class="descripcion-bolso">
+            <p>Elegante bolso de piel de cocodrilo auténtica con acabado brillante. Dispone de asas reforzadas y compartimentos interiores organizados para mayor comodidad.</p>
+          </div>
         </div>
-        <div class="slide">
-          <a href="productos.html">
-            <img src="Bolsos/serpiente_amarillo.jpeg" alt="Bolso de piel de serpiente">
-            <div class="descripcion-bolso">
-              <p>Sofisticado bolso de piel de serpiente con patrón natural único. Ideal para ocasiones especiales con cierre magnético y detalles metálicos dorados.</p>
-              <p class="caracteristicas">
-                <span>Material: Piel de pitón</span>
-                <span>Dimensiones: 25x15x8cm</span>
-                <span>Colores: Natural, Tintado</span>
-              </p>
-            </div>
-          </a>
+      </a>
+    </div>
+    
+    <div class="slide">
+      <a href="productos.html">
+        <div class="slide-content">
+          <img src="Bolsos/serpiente_amarillo.jpeg" alt="Bolso de piel de serpiente">
+          <div class="descripcion-bolso">
+            <p>Sofisticado bolso de piel de serpiente con patrón natural único. Ideal para ocasiones especiales con cierre magnético y detalles metálicos dorados.</p>
+          </div>
         </div>
-        <div class="slide">
-          <a href="productos.html">
-            <img src="Bolsos/leopardo_correa.jpeg" alt="Bolso de piel de leopardo">
-            <div class="descripcion-bolso">
-              <p>Exclusivo bolso con estampado de leopardo. Perfecto para un look atrevido con cierre magnético y cadena dorada desmontable para versatilidad.</p>
-              <p class="caracteristicas">
-                <span>Material: Piel tratada</span>
-                <span>Dimensiones: 28x18x10cm</span>
-                <span>Colores: Estampado natural</span>
-              </p>
-            </div>
-          </a>
+      </a>
+    </div>
+    
+    <div class="slide">
+      <a href="productos.html">
+        <div class="slide-content">
+          <img src="Bolsos/leopardo_correa.jpeg" alt="Bolso de piel de leopardo">
+          <div class="descripcion-bolso">
+            <p>Exclusivo bolso con estampado de leopardo. Perfecto para un look atrevido con cierre magnético y cadena dorada desmontable para versatilidad.</p>
+          </div>
         </div>
-        <div class="slide">
-          <a href="productos.html">
-            <img src="Bolsos/zebra_correa.jpeg" alt="Bolso de piel de zebra">
-            <div class="descripcion-bolso">
-              <p>Llamativo bolso con estampado de cebra. Diseño vanguardista con detalles metálicos y asa ajustable para llevar en mano o al hombro según la ocasión.</p>
-              <p class="caracteristicas">
-                <span>Material: Piel sintética premium</span>
-                <span>Dimensiones: 32x22x15cm</span>
-                <span>Colores: Blanco/Negro</span>
-              </p>
-            </div>
-          </a>
+      </a>
+    </div>
+    
+    <div class="slide">
+      <a href="productos.html">
+        <div class="slide-content">
+          <img src="Bolsos/zebra_correa.jpeg" alt="Bolso de piel de zebra">
+          <div class="descripcion-bolso">
+            <p>Llamativo bolso con estampado de cebra. Diseño vanguardista con detalles metálicos y asa ajustable para llevar en mano o al hombro según la ocasión.</p>
+          </div>
         </div>
-        <button class="slider-btn prev">&lt;</button>
-        <button class="slider-btn next">&gt;</button>
-        
-        <div class="slider-indicators">
-          <div class="slider-indicator active"></div>
-          <div class="slider-indicator"></div>
-          <div class="slider-indicator"></div>
-          <div class="slider-indicator"></div>
-        </div>
-      </div>
+      </a>
+    </div>
+  </div>
+  
+  <button class="slider-btn prev" aria-label="Anterior">&lt;</button>
+  <button class="slider-btn next" aria-label="Siguiente">&gt;</button>
+  
+  <div class="slider-indicators">
+    <div class="slider-indicator active" aria-label="Slide 1"></div>
+    <div class="slider-indicator" aria-label="Slide 2"></div>
+    <div class="slider-indicator" aria-label="Slide 3"></div>
+    <div class="slider-indicator" aria-label="Slide 4"></div>
+  </div>
+</div>
 
       <div id="totality">
         <div id="divisionuno" style="background-color: rgb(0, 59, 5)">
